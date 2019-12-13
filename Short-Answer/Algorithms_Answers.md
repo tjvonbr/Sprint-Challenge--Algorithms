@@ -2,13 +2,13 @@
 
 ## Exercise I
 
-a)
+a) O(n)
 
 
-b)
+b) O(n) ==> I don't know what the specific answer is, but it seems to be growing in a linear fashion.
 
 
-c)
+c) O(2n) 
 
 ## Exercise II
 
