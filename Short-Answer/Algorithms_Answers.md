@@ -10,6 +10,8 @@ b) O(n) ==> I don't know what the specific answer is, but it seems to be growing
 
 c) O(2n) 
 
+** I'm still not entirely sure about any of these.
+
 ## Exercise II
 
 
