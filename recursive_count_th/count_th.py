@@ -12,4 +12,4 @@ def count_th(word, i, j, value):
 
     return count_th(word, i + 1, j + 1, value)
 
-print(count_th("eethoughts", 0, 1, "th"))
+print(count_th("eeoughtsth", 0, 1, "th"))

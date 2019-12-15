@@ -18,10 +18,9 @@ class SortingRobot:
         if self._position <= len(self._list) - 1:
             return True
 
-        else:
+        if self._position >= len(self._list):
             return False
 
-        return self._position < len(self._list) - 1
 
     def can_move_left(self):
         """
@@ -109,17 +108,28 @@ class SortingRobot:
     def sort(self):
         """
         Sort the robot's list.
+
         """
+        
         # Fill this out
-        if len(self._list) > 1:
-            mid = len(self._list)//2
-            left = self._list[:mid]
-            right = self._list[mid:]
+        if self.can_move_right():
+            self.swap_item()
+            self.move_right()
+            print(self._item)
 
-            print(left, right)
+            if self.compare_item() == 1:
+                self.swap_item()
+                self.move_right()
+                return self.sort()
 
-            return this.sort(left)
-            return this.sort(right)
+            elif self.compare_item() == -1:
+                self.move_left()
+                self.swap_item()
+                self.move_right()
+                return self.sort()
+
+        else:
+            return
 
 
 if __name__ == "__main__":
@@ -132,3 +142,4 @@ if __name__ == "__main__":
 
     robot.sort()
     print(robot._list)
+ 
